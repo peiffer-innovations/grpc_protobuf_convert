@@ -8,18 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    container:
-      image: dart:latest
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: pub upgrade
-      - name: Dart Analyzer
-        run: dartanalyzer lib
-      - name: Code Format
-        run: dartfmt --set-exit-if-changed -w lib test
-      - name: Run tests
-        run: pub run test
-      - name: Run test coverage
-        run: pub run test_coverage
+      - name: Validate
+        uses: peiffer-innovations/actions-flutter-validate@v1.1.1
+        with:
+          flutter_package: false
