@@ -21,11 +21,9 @@ jobs:
           flutter_package: true
 
       - name: Publish
-        uses: sakebook/actions-flutter-pub-publisher@v1.3.1
+        uses: peiffer-innovations/actions-pub-publish@v1.0.0
         with:
-          credential: ${{ secrets.CREDENTIAL_JSON }}
-          flutter_package: true
-          skip_test: true
+          credentials: ${{ secrets.CREDENTIAL_JSON }}
 
       - uses: CDDelta/dart-version-auto-tag@v1.0.1
         with:
