@@ -1,3 +1,8 @@
+## [2.0.0] - December 28th, 2021
+
+* Update to v2 of `grpc_googleapis`
+
+
 ## [1.0.0+2] - December 27th, 2021
 
 * Dependency updates
