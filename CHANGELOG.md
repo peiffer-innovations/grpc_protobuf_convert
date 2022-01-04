@@ -1,3 +1,8 @@
+## [2.0.0+1] - January 3rd, 2022
+
+* Dart 2.15
+
+
 ## [2.0.0] - December 28th, 2021
 
 * Update to v2 of `grpc_googleapis`
