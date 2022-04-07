@@ -4,7 +4,7 @@ version: 2.0.0+2
 homepage: https://github.com/peiffer-innovations/grpc_protobuf_convert
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
+  sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
   fixnum: ^1.0.0
