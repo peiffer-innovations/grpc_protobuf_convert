@@ -4,7 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [grpc_protobuf_convert](#grpc_protobuf_convert)
+- [Introduction](#introduction)
   - [Using the library](#using-the-library)
   - [Example](#example)
 
