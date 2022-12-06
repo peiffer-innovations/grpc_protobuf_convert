@@ -22,8 +22,8 @@ class GrpcProtobufConvert {
   /// Converts a Dart core [Duration] [value] to a Protobuf [pb.Duration]
   /// object.
   static pb.Duration toDuration(Duration value) {
-    var seconds = value.inSeconds;
-    var nanos =
+    final seconds = value.inSeconds;
+    final nanos =
         (value.inMilliseconds - Duration(seconds: seconds).inMilliseconds) *
             1000;
     return pb.Duration(
@@ -40,8 +40,8 @@ class GrpcProtobufConvert {
   /// Converts a Dart core [DateTime] [value] to a Protobuf [db.Timestamp]
   /// object.
   static pb.Timestamp toTimestamp(DateTime value) {
-    var seconds = value.millisecondsSinceEpoch ~/ 1000;
-    var nanos = (value.millisecondsSinceEpoch - (seconds * 1000)) * 1000;
+    final seconds = value.millisecondsSinceEpoch ~/ 1000;
+    final nanos = (value.millisecondsSinceEpoch - (seconds * 1000)) * 1000;
     return pb.Timestamp(
       nanos: nanos,
       seconds: toInt64(seconds),
