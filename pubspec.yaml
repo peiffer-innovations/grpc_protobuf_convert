@@ -1,19 +1,19 @@
 name: 'grpc_protobuf_convert'
 description: 'Simple converters to convert to / from Protobuf and Fixnum classes from Dart classes.'
-version: '2.0.0+11'
+version: '2.0.0+12'
 homepage: 'https://github.com/peiffer-innovations/grpc_protobuf_convert'
 
-environment:
+environment: 
   sdk: '>=2.18.0 <3.0.0'
 
-dependencies:
+dependencies: 
   fixnum: '^1.0.1'
   grpc_googleapis: '^2.0.22'
 
-dev_dependencies:
-  test: '^1.22.0'
+dev_dependencies: 
+  test: '^1.22.1'
 
-ignore_updates:
+ignore_updates: 
   - 'archive'
   - 'async'
   - 'boolean_selector'
