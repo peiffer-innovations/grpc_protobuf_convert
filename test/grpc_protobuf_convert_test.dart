@@ -28,7 +28,7 @@ void main() {
   });
 
   test('toDuration', () {
-    final duration = const Duration(milliseconds: 35200);
+    const duration = Duration(milliseconds: 35200);
 
     final pbDuration = GrpcProtobufConvert.toDuration(duration);
 
@@ -37,7 +37,7 @@ void main() {
   });
 
   test('toInt64', () {
-    final value = 1234567890;
+    const value = 1234567890;
 
     final i64 = GrpcProtobufConvert.toInt64(value);
 
