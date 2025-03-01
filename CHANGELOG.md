@@ -1,3 +1,8 @@
+## [3.0.0] - March 1st, 2025
+
+* Dusted off and brought back to life
+
+
 ## [2.0.3] - November 15th, 2023
 
 * Standardized analysis rules
