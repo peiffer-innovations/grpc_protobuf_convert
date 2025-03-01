@@ -1,0 +1,24 @@
+name: Publisher
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate
+        uses: peiffer-innovations/actions-flutter-validate@v2
+
+      - name: Publish
+        uses: peiffer-innovations/actions-pub-publish@v1.0.2
+        with:
+          credentials: ${{ secrets.CREDENTIAL_JSON }}
+
+      - uses: peiffer-innovations/actions-dart-version-autotag@v2
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
