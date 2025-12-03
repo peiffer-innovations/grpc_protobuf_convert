@@ -1,3 +1,8 @@
+## [4.0.0] - December 3rd, 2025
+
+* Updated `grpc_googleapis` to v4
+
+
 ## [3.0.0] - March 1st, 2025
 
 * Dusted off and brought back to life
